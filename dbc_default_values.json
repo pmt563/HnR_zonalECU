@@ -22,8 +22,9 @@
   "VCFRONT_crashState"  : 0,
   "DI_tractionControlModeUI" : 0,
   "VCFRONT_hpCabinLoadType" : 1,
+  "SRS_ABECU_SleepWakeUp" : 2,
   "SRS_ABECU_ThresholdCAN" : 0,
-  "SRS_ABECU_IsSleep": false,
-  "SRS_ABECU_IsWakeUp": false,
-  "SRS_ABECU_IsConfig": false
+  "Diag_ABM_REQ" : 0,
+  "NearCrash" : 0,
+  "SRS_CrashOut_DetectionCrashType": 0
 }

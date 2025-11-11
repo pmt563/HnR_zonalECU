@@ -1,0 +1,1251 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SRS
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ SRS_CrashOut_Rollover : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_Right : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_Rear : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_Micro : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_Left : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_Front : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_CrashOut_AirBagTrigger : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1281 SRS_ABECU_501: 5 Vector__XXX
+ SG_ SRS_ABECU_ThresholdCAN : 15|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SRS_ABECU_IsConfig : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_ABECU_IsWakeUp : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_ABECU_IsSleep : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 384 EPS_180: 8 Vector__XXX
+ SG_ EpsSasSteerAg : 7|16@0- (0.1,0) [-780|780] "degree"  SRS
+ SG_ EpsSasSteerAgVld : 31|1@0+ (1,0) [0|1] ""  SRS
+
+BO_ 342 IBCU_156: 32 Vector__XXX
+ SG_ EpbSts : 7|3@0+ (1,0) [0|7] ""  SRS
+ SG_ EpbFailrSts : 1|2@0+ (1,0) [0|3] ""  SRS
+
+BO_ 450 IBCU_1C2: 64 Vector__XXX
+ SG_ EspEbdFailr : 36|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspVdcActvSts : 414|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspTcsActvSts : 52|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspActvSts : 55|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspAbsActv : 72|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspTcsFailr : 53|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspFctOpenSts : 54|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspAbsFailr : 73|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspVehSpdVld : 101|1@0+ (1,0) [0|1] ""  SRS
+ SG_ EspVehSpd : 100|13@0+ (0.05625,0) [0|460.744] "km/h"  SRS
+
+BO_ 378 IBCU_17A: 64 Vector__XXX
+ SG_ IbBrkPedlStsGbVld : 201|2@0+ (1,0) [0|2] ""  SRS
+ SG_ IbBrkPedlStsGb : 199|8@0+ (1,0) [0|255] "%"  SRS
+ SG_ IbBrkPedlTrvlDrvrVld : 217|2@0+ (1,0) [0|2] ""  SRS
+ SG_ IbBrkPedlTrvlDrvr : 239|12@0+ (0.015625,-5) [-5|47] "mm"  SRS
+
+BO_ 353 IBCU_161: 32 Vector__XXX
+ SG_ EspCdpActv : 29|1@0+ (1,0) [0|1] ""  SRS
+ SG_ ESP_AWBactive : 0|1@0+ (1,0) [0|1] ""  SRS
+ SG_ ESP_AEBdecActive : 1|1@0+ (1,0) [0|1] ""  SRS
+ SG_ ESP_AEBAvailable : 2|1@0+ (1,0) [0|1] ""  SRS
+
+BO_ 722 VIU_FL_2D2: 64 Vector__XXX
+ SG_ CdcTotMilg : 399|24@0+ (0.1,0) [0|1677721.5] "Km"  SRS
+
+BO_ 1696 SRS_6A0: 8 SRS
+ SG_ SrsDtc2Sts : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc2MidByte : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc2LoByte : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc2HiByte : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc1Sts : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc1MidByte : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc1LoByte : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsDtc1HiByte : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1514 SRS_5EA: 8 SRS
+ SG_ SrsHwVers6 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsHwVers5 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsHwVers4 : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SrsHwVers3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsHwVers2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsHwVers1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsHwVers0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1531 SRS_5FB: 8 SRS
+ SG_ SrsSwVers6 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsSwVers5 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsSwVers4 : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SrsSwVers3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsSwVers2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsSwVers1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsSwVers0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 80 SRS_50: 8 SRS
+ SG_ SrsDrvrBucSwtSts : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsCycCntr050 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SrsCrcChk050 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsPassBucSwtSts : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsRi3rdBucSwtSts : 28|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsMid3rdBucSwtSts : 26|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsLe3rdBucSwtSts : 30|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsWarnLampSts : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsRi2ndBucSwtSts : 19|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsPadIndcn : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SrsMid2ndBucSwtSts : 22|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsLe2ndBucSwtSts : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SrsCrashOutpStsChks : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SrsCrashOutpSts : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 338 VIU_FL_152: 64 Vector__XXX
+ SG_ AD_Authernticator_152 : 463|56@0+ (1,0) [0|7.20575940379279E+16] ""  SRS
+ SG_ AD_MsgCnt_152 : 455|6@0+ (1,0) [0|63] ""  SRS
+ SG_ AD_ResetFlag_152 : 449|2@0+ (1,0) [0|3] ""  SRS
+ SG_ ESP1_CDDActive : 166|1@0+ (1,0) [0|1] ""  SRS
+ SG_ AD_AEBTargetLngRange : 245|9@0+ (0.5,-70) [-70|180] "m"  SRS
+ SG_ AD_AEBTargetLatRelSpeed : 239|10@0+ (0.125,-64) [-64|63.875] "m/s"  SRS
+ SG_ AD_AEBTargetLatRange : 215|10@0+ (0.1,-50) [-50|50] "m"  SRS
+ SG_ AD_AEBTargetProb : 206|7@0+ (1,0) [0|100] "%"  SRS
+ SG_ AD_AEBTargetType : 231|4@0+ (1,0) [0|15] ""  SRS
+ SG_ AD_AEBTargetTTC : 221|6@0+ (0.1,0) [0|6] "s"  SRS
+ SG_ AD_AEBTargetRelSpeed : 199|9@0+ (1,-250) [-250|250] "km/h"  SRS
+ SG_ AD_AEBStatus : 226|3@0+ (1,0) [0|7] ""  SRS
+ SG_ AD_ACCMode : 54|3@0+ (1,0) [0|7] ""  SRS
+ SG_ AD_CDDActive : 44|1@0+ (1,0) [0|1] ""  SRS
+ SG_ AD_AEBActive : 87|1@0+ (1,0) [0|1] ""  SRS
+ SG_ AD_CRCCheck_152 : 439|16@0+ (1,0) [0|65535] ""  SRS
+ SG_ AD_RollingCounter_152 : 427|4@0+ (1,0) [0|15] ""  SRS
+ SG_ AD_FCWPreWarning : 167|1@0+ (1,0) [0|1] ""  SRS
+
+BO_ 513 VIU_FL_201: 8 Vector__XXX
+ SG_ AD_Left_FCTALAlert : 3|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_Right_FCTARAlert : 1|2@0+ (1,0) [0|3] ""  SRS
+
+BO_ 941 VIU_FL_3AD: 32 Vector__XXX
+ SG_ AD_IACCMode : 7|3@0+ (1,0) [0|7] ""  SRS
+ SG_ AD_AutoDriveState : 2|3@0+ (1,0) [0|7] ""  SRS
+ SG_ DMS_DrowsinessStatus : 106|3@0+ (1,0) [0|7] ""  SRS
+ SG_ DMS_DriverEyesGazeArea : 101|4@0+ (1,0) [0|15] ""  SRS
+ SG_ DMS_DistractionStatus : 97|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_SafeStopSts : 26|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_TakeoverReqAtIPFail : 23|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_EyesOnWarnning : 21|3@0+ (1,0) [0|7] ""  SRS
+ SG_ AD_LatTakeoverReq : 15|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_HandsOnReq : 18|3@0+ (1,0) [0|7] ""  SRS
+ SG_ AD_LngTakeOverReq : 13|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_DriverHandsOffStatus : 11|2@0+ (1,0) [0|3] ""  SRS
+ SG_ AD_TargetBasedLateralControl : 9|2@0+ (1,0) [0|3] ""  SRS
+ SG_ ACC_CRCCheck_3AD : 247|16@0+ (1,0) [0|65535] ""  SRS
+ SG_ ACC_RollingCounter_3AD : 235|4@0+ (1,0) [0|15] ""  SRS
+
+BO_ 796 SRS_51: 8 SRS
+ SG_ SRS_CrashOut_DetectionCrashType : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SrsCycCntr051 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SrsCrcChk051 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 919 VIU_FL_397: 8 Vector__XXX
+ SG_ VIUFL_OTAmode_Cntr : 51|4@0+ (1,0) [0|15] ""  SRS
+ SG_ VIUFL_OTAmode_Chks : 63|8@0+ (1,0) [0|255] ""  SRS
+ SG_ VIUFL_OTAmode : 3|4@0+ (1,0) [0|15] ""  SRS
+
+BO_ 648 VIU_FL_288: 8 Vector__XXX
+ SG_ BcmTurnIndcrRi : 13|2@0+ (1,0) [0|3] ""  SRS
+ SG_ BcmTurnIndcrLe : 15|2@0+ (1,0) [0|3] ""  SRS
+ SG_ BcmEmgyLiSts : 37|2@0+ (1,0) [0|3] ""  SRS
+ SG_ BCM_TurnLightSwitchSts : 1|2@0+ (1,0) [0|3] ""  SRS
+ SG_ BcmPwrStsFb : 43|2@0+ (1,0) [0|3] ""  SRS
+
+BO_ 433 VIU_FL_1B1: 64 Vector__XXX
+ SG_ VcuAccrPedlPosnVld : 216|1@0+ (1,0) [0|1] ""  SRS
+ SG_ VcuAccrPedlPosn : 195|10@0+ (0.1,0) [0|102.3] "%"  SRS
+ SG_ VcuSimnEpbSwtStsVld : 234|1@0+ (1,0) [0|1] ""  SRS
+ SG_ VcuSimnEpbSwtSts : 233|2@0+ (1,0) [0|3] ""  SRS
+ SG_ VcuVehGearPosnVld : 2|1@0+ (1,0) [0|1] ""  SRS
+ SG_ VcuCalcnAccrPedlPosnVld : 217|1@0+ (1,0) [0|1] ""  SRS
+ SG_ VcuCalcnAccrPedlPosn : 201|10@0+ (0.1,0) [0|102.3] "%"  SRS
+ SG_ VcuGearPosn : 5|3@0+ (1,0) [0|7] ""  SRS
+
+BO_ 349 SRS_15D: 8 SRS
+ SG_ ESP_YawRateValid : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESP_YawRate : 37|14@0+ (0.01,-81.91) [-81.91|81.91] "degree/s" Vector__XXX
+ SG_ ESP_RollingCounter_278 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ESP_LatAccelValid : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESP_LatAccel : 23|8@0+ (0.1,-12.7) [-12.7|12.7] "m/s2" Vector__XXX
+ SG_ ESP_CRCCheck_278 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ESP_LongAccelValid : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESP_LongAccel : 31|10@0+ (0.03125,-16) [-16|15.90625] "m/s2" Vector__XXX
+ SG_ ESP_Calibrated : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 759 VIU_FL_2F7: 8 Vector__XXX
+ SG_ TboxLocalTiYear : 7|8@0+ (1,2000) [2000|2255] "year"  SRS
+ SG_ TboxLocalTiVld : 46|1@0+ (1,0) [0|1] ""  SRS
+ SG_ TboxLocalTiSec : 45|6@0+ (1,0) [0|63] "second"  SRS
+ SG_ TboxLocalTiMth : 11|4@0+ (1,0) [0|15] "month"  SRS
+ SG_ TboxLocalTiMins : 37|6@0+ (1,0) [0|63] "minute"  SRS
+ SG_ TboxLocalTiHr : 28|5@0+ (1,0) [0|31] "hour"  SRS
+ SG_ TboxLocalTiDate : 20|5@0+ (1,0) [0|31] "day"  SRS
+
+BO_ 1297 VIU_FL_511: 8 Vector__XXX
+ SG_ TpmsCycCntr511 : 51|4@0+ (1,0) [0|15] ""  SRS
+ SG_ TpmsCrcChk511 : 63|8@0+ (1,0) [0|255] ""  SRS
+ SG_ TpmsSysFailrWarn : 6|1@0+ (1,0) [0|1] ""  SRS
+ SG_ TpmsRiReTirePWarn : 5|3@0+ (1,0) [0|7] ""  SRS
+ SG_ TpmsRiFrntTirePWarn : 44|3@0+ (1,0) [0|7] ""  SRS
+ SG_ TpmsLeReTirePWarn : 2|3@0+ (1,0) [0|7] ""  SRS
+ SG_ TpmsLeFrntTirePWarn : 47|3@0+ (1,0) [0|7] ""  SRS
+
+BO_ 688 VIU_FL_2B0: 8 Vector__XXX
+ SG_ VcuLoSocPowerOffFlag : 48|1@0+ (1,0) [0|1] ""  SRS
+ SG_ VcuCCMode : 45|2@0+ (1,0) [0|3] ""  SRS
+
+BO_ 2033 VIU_FL_7F1: 64 Vector__XXX
+ SG_ Diag_ABM_REQ : 7|64@1+ (1,0) [0|1.84467440737096E+19] "" Vector__XXX
+ SG_ Diagnose_message201 : 0|1@0+ (1,0) [0|1] ""  SRS
+
+BO_ 2041 SRS_7F9: 8 SRS
+ SG_ Diagnose_message203 : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2015 VIU_FL_7DF: 64 Vector__XXX
+ SG_ Diagnose_message245 : 0|1@0+ (1,0) [0|1] ""  SRS
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 SRS_CrashOut_Rollover " ";
+CM_ SG_ 3221225472 SRS_CrashOut_Right " ";
+CM_ SG_ 3221225472 SRS_CrashOut_Rear " ";
+CM_ SG_ 3221225472 SRS_CrashOut_Micro " ";
+CM_ SG_ 3221225472 SRS_CrashOut_Left " ";
+CM_ SG_ 3221225472 SRS_CrashOut_Front " ";
+CM_ BO_ 1281 " ";
+CM_ BO_ 384 " ";
+CM_ SG_ 384 EpsSasSteerAg "�������������תΪ���������תΪ��
+Steering wheel angle (N = value of the message) =
+   = N �� 0.1 , for 0 < N �� 32767
+   = (N-65536) �� 0.1 , for N �� 32767
+Note=       that Clockwise rotation is ��-�� and anti-Clockwise rotation is ��+�� ";
+CM_ SG_ 384 EpsSasSteerAgVld " ";
+CM_ BO_ 342 " ";
+CM_ SG_ 342 EpbSts " ";
+CM_ SG_ 342 EpbFailrSts " ";
+CM_ BO_ 450 " ";
+CM_ SG_ 450 EspEbdFailr " ";
+CM_ SG_ 450 EspVdcActvSts " ";
+CM_ SG_ 450 EspTcsActvSts " ";
+CM_ SG_ 450 EspActvSts " ";
+CM_ SG_ 450 EspAbsActv " ";
+CM_ SG_ 450 EspTcsFailr " ";
+CM_ SG_ 450 EspFctOpenSts " ";
+CM_ SG_ 450 EspAbsFailr " ";
+CM_ SG_ 450 EspVehSpdVld " ";
+CM_ SG_ 450 EspVehSpd " ";
+CM_ BO_ 378 " ";
+CM_ SG_ 378 IbBrkPedlStsGbVld " ";
+CM_ SG_ 378 IbBrkPedlStsGb " ";
+CM_ SG_ 378 IbBrkPedlTrvlDrvrVld " ";
+CM_ SG_ 378 IbBrkPedlTrvlDrvr " ";
+CM_ BO_ 353 " ";
+CM_ SG_ 353 EspCdpActv " ";
+CM_ SG_ 353 ESP_AWBactive " ";
+CM_ SG_ 353 ESP_AEBdecActive " ";
+CM_ SG_ 353 ESP_AEBAvailable " ";
+CM_ BO_ 722 " ";
+CM_ SG_ 722 CdcTotMilg " ";
+CM_ BO_ 1696 " ";
+CM_ SG_ 1696 SrsDtc2Sts " ";
+CM_ SG_ 1696 SrsDtc2MidByte " ";
+CM_ SG_ 1696 SrsDtc2LoByte " ";
+CM_ SG_ 1696 SrsDtc2HiByte " ";
+CM_ SG_ 1696 SrsDtc1Sts " ";
+CM_ SG_ 1696 SrsDtc1MidByte " ";
+CM_ SG_ 1696 SrsDtc1LoByte " ";
+CM_ SG_ 1696 SrsDtc1HiByte " ";
+CM_ BO_ 1514 " ";
+CM_ SG_ 1514 SrsHwVers6 " ";
+CM_ SG_ 1514 SrsHwVers5 " ";
+CM_ SG_ 1514 SrsHwVers4 " ";
+CM_ SG_ 1514 SrsHwVers3 " ";
+CM_ SG_ 1514 SrsHwVers2 " ";
+CM_ SG_ 1514 SrsHwVers1 " ";
+CM_ SG_ 1514 SrsHwVers0 " ";
+CM_ BO_ 1531 " ";
+CM_ SG_ 1531 SrsSwVers6 " ";
+CM_ SG_ 1531 SrsSwVers5 " ";
+CM_ SG_ 1531 SrsSwVers4 " ";
+CM_ SG_ 1531 SrsSwVers3 " ";
+CM_ SG_ 1531 SrsSwVers2 " ";
+CM_ SG_ 1531 SrsSwVers1 " ";
+CM_ SG_ 1531 SrsSwVers0 " ";
+CM_ BO_ 80 " ";
+CM_ SG_ 80 SrsDrvrBucSwtSts " ";
+CM_ SG_ 80 SrsCycCntr050 " ";
+CM_ SG_ 80 SrsCrcChk050 " ";
+CM_ SG_ 80 SrsPassBucSwtSts " ";
+CM_ SG_ 80 SrsRi3rdBucSwtSts " ";
+CM_ SG_ 80 SrsMid3rdBucSwtSts " ";
+CM_ SG_ 80 SrsLe3rdBucSwtSts " ";
+CM_ SG_ 80 SrsWarnLampSts " ";
+CM_ SG_ 80 SrsRi2ndBucSwtSts " ";
+CM_ SG_ 80 SrsPadIndcn " ";
+CM_ SG_ 80 SrsMid2ndBucSwtSts " ";
+CM_ SG_ 80 SrsLe2ndBucSwtSts " ";
+CM_ SG_ 80 SrsCrashOutpStsChks "Checksum
+=(SRS_CrashOutputStatus)XOR0xF ";
+CM_ SG_ 80 SrsCrashOutpSts "��ײ�źŶ���Ϊ������Ψһ���¼������ź�, ���ź�ֵΪ��0ʱ����20ms�����ظ�����10�Σ�֮�����ڻָ�Ϊ500ms
+0x2~0xF=NotUsed ";
+CM_ BO_ 338 " ";
+CM_ SG_ 338 AD_Authernticator_152 " ";
+CM_ SG_ 338 AD_MsgCnt_152 " ";
+CM_ SG_ 338 AD_ResetFlag_152 " ";
+CM_ SG_ 338 ESP1_CDDActive " ";
+CM_ SG_ 338 AD_AEBTargetLngRange " ";
+CM_ SG_ 338 AD_AEBTargetLatRelSpeed " ";
+CM_ SG_ 338 AD_AEBTargetLatRange " ";
+CM_ SG_ 338 AD_AEBTargetProb " ";
+CM_ SG_ 338 AD_AEBTargetType " ";
+CM_ SG_ 338 AD_AEBTargetTTC " ";
+CM_ SG_ 338 AD_AEBTargetRelSpeed " ";
+CM_ SG_ 338 AD_AEBStatus " ";
+CM_ SG_ 338 AD_ACCMode " ";
+CM_ SG_ 338 AD_CDDActive " ";
+CM_ SG_ 338 AD_AEBActive " ";
+CM_ SG_ 338 AD_CRCCheck_152 " ";
+CM_ SG_ 338 AD_RollingCounter_152 " ";
+CM_ SG_ 338 AD_FCWPreWarning " ";
+CM_ BO_ 513 " ";
+CM_ SG_ 513 AD_Left_FCTALAlert " ";
+CM_ SG_ 513 AD_Right_FCTARAlert " ";
+CM_ BO_ 941 " ";
+CM_ SG_ 941 AD_IACCMode " ";
+CM_ SG_ 941 AD_AutoDriveState " ";
+CM_ SG_ 941 DMS_DrowsinessStatus " ";
+CM_ SG_ 941 DMS_DriverEyesGazeArea " ";
+CM_ SG_ 941 DMS_DistractionStatus " ";
+CM_ SG_ 941 AD_SafeStopSts " ";
+CM_ SG_ 941 AD_TakeoverReqAtIPFail " ";
+CM_ SG_ 941 AD_EyesOnWarnning " ";
+CM_ SG_ 941 AD_LatTakeoverReq " ";
+CM_ SG_ 941 AD_HandsOnReq " ";
+CM_ SG_ 941 AD_LngTakeOverReq " ";
+CM_ SG_ 941 AD_DriverHandsOffStatus " ";
+CM_ SG_ 941 AD_TargetBasedLateralControl " ";
+CM_ SG_ 941 ACC_CRCCheck_3AD " ";
+CM_ SG_ 941 ACC_RollingCounter_3AD " ";
+CM_ BO_ 796 " ";
+CM_ SG_ 796 SRS_CrashOut_DetectionCrashType " ";
+CM_ SG_ 796 SrsCycCntr051 " ";
+CM_ SG_ 796 SrsCrcChk051 " ";
+CM_ BO_ 919 " ";
+CM_ SG_ 919 VIUFL_OTAmode_Cntr " ";
+CM_ SG_ 919 VIUFL_OTAmode_Chks " ";
+CM_ SG_ 919 VIUFL_OTAmode " ";
+CM_ BO_ 648 " ";
+CM_ SG_ 648 BcmTurnIndcrRi " ";
+CM_ SG_ 648 BcmTurnIndcrLe " ";
+CM_ SG_ 648 BcmEmgyLiSts " ";
+CM_ SG_ 648 BCM_TurnLightSwitchSts " ";
+CM_ SG_ 648 BcmPwrStsFb " ";
+CM_ BO_ 433 " ";
+CM_ SG_ 433 VcuAccrPedlPosnVld " ";
+CM_ SG_ 433 VcuAccrPedlPosn " ";
+CM_ SG_ 433 VcuSimnEpbSwtStsVld " ";
+CM_ SG_ 433 VcuSimnEpbSwtSts " ";
+CM_ SG_ 433 VcuVehGearPosnVld " ";
+CM_ SG_ 433 VcuCalcnAccrPedlPosnVld " ";
+CM_ SG_ 433 VcuCalcnAccrPedlPosn " ";
+CM_ SG_ 433 VcuGearPosn " ";
+CM_ BO_ 349 " ";
+CM_ SG_ 349 ESP_YawRateValid " ";
+CM_ SG_ 349 ESP_YawRate " ";
+CM_ SG_ 349 ESP_RollingCounter_278 " ";
+CM_ SG_ 349 ESP_LatAccelValid " ";
+CM_ SG_ 349 ESP_LatAccel " ";
+CM_ SG_ 349 ESP_CRCCheck_278 " ";
+CM_ SG_ 349 ESP_LongAccelValid " ";
+CM_ SG_ 349 ESP_LongAccel " ";
+CM_ SG_ 349 ESP_Calibrated " ";
+CM_ BO_ 759 " ";
+CM_ SG_ 759 TboxLocalTiYear " ";
+CM_ SG_ 759 TboxLocalTiVld " ";
+CM_ SG_ 759 TboxLocalTiSec " ";
+CM_ SG_ 759 TboxLocalTiMth " ";
+CM_ SG_ 759 TboxLocalTiMins " ";
+CM_ SG_ 759 TboxLocalTiHr " ";
+CM_ SG_ 759 TboxLocalTiDate " ";
+CM_ BO_ 1297 " ";
+CM_ SG_ 1297 TpmsCycCntr511 " ";
+CM_ SG_ 1297 TpmsCrcChk511 " ";
+CM_ SG_ 1297 TpmsSysFailrWarn " ";
+CM_ SG_ 1297 TpmsRiReTirePWarn " ";
+CM_ SG_ 1297 TpmsRiFrntTirePWarn " ";
+CM_ SG_ 1297 TpmsLeReTirePWarn " ";
+CM_ SG_ 1297 TpmsLeFrntTirePWarn " ";
+CM_ BO_ 688 " ";
+CM_ SG_ 688 VcuLoSocPowerOffFlag " ";
+CM_ SG_ 688 VcuCCMode " ";
+CM_ BO_ 2033 "CHS_CANVIU_FL0x7F1 ";
+CM_ SG_ 2033 Diagnose_message201 " ";
+CM_ BO_ 2041 "CHS_CANSRS0x7F9 ";
+CM_ SG_ 2041 Diagnose_message203 " ";
+CM_ BO_ 2015 "CHS_CANVIU_FL0x7DF ";
+CM_ SG_ 2015 Diagnose_message245 " ";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "NWM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInvalidValue" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","NotUsed","NotUsed","NotUsed","Cyclic","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "GenNodSleepTime" INT 0 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NWM-WakeupAllowed" "";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigInvalidValue" "/";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "GenNodSleepTime" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "No";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_REL_ "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_REL_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_REL_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_REL_ "GenMsgStartDelayTime" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgSendType" BO_ 1281 1;
+BA_ "GenMsgCycleTime" BO_ 1281 50;
+BA_ "VFrameFormat" BO_ 1281 14;
+BA_ "GenMsgSendType" BO_ 384 0;
+BA_ "GenMsgCycleTime" BO_ 384 10;
+BA_ "VFrameFormat" BO_ 384 14;
+BA_ "GenMsgSendType" BO_ 342 0;
+BA_ "GenMsgCycleTime" BO_ 342 10;
+BA_ "VFrameFormat" BO_ 342 14;
+BA_ "GenMsgSendType" BO_ 450 0;
+BA_ "GenMsgCycleTime" BO_ 450 10;
+BA_ "VFrameFormat" BO_ 450 14;
+BA_ "GenMsgSendType" BO_ 378 0;
+BA_ "GenMsgCycleTime" BO_ 378 10;
+BA_ "VFrameFormat" BO_ 378 14;
+BA_ "GenMsgSendType" BO_ 353 0;
+BA_ "GenMsgCycleTime" BO_ 353 10;
+BA_ "VFrameFormat" BO_ 353 14;
+BA_ "GenMsgSendType" BO_ 722 0;
+BA_ "GenMsgCycleTime" BO_ 722 100;
+BA_ "VFrameFormat" BO_ 722 14;
+BA_ "GenMsgSendType" BO_ 1696 0;
+BA_ "GenMsgCycleTime" BO_ 1696 500;
+BA_ "VFrameFormat" BO_ 1696 14;
+BA_ "GenMsgSendType" BO_ 1514 0;
+BA_ "GenMsgCycleTime" BO_ 1514 1000;
+BA_ "VFrameFormat" BO_ 1514 14;
+BA_ "GenMsgSendType" BO_ 1531 0;
+BA_ "GenMsgCycleTime" BO_ 1531 1000;
+BA_ "VFrameFormat" BO_ 1531 14;
+BA_ "GenMsgSendType" BO_ 80 0;
+BA_ "GenMsgCycleTime" BO_ 80 500;
+BA_ "VFrameFormat" BO_ 80 14;
+BA_ "GenMsgSendType" BO_ 338 0;
+BA_ "GenMsgCycleTime" BO_ 338 10;
+BA_ "VFrameFormat" BO_ 338 14;
+BA_ "GenMsgSendType" BO_ 513 0;
+BA_ "GenMsgCycleTime" BO_ 513 50;
+BA_ "VFrameFormat" BO_ 513 14;
+BA_ "GenMsgSendType" BO_ 941 0;
+BA_ "GenMsgCycleTime" BO_ 941 100;
+BA_ "VFrameFormat" BO_ 941 14;
+BA_ "GenMsgSendType" BO_ 796 0;
+BA_ "GenMsgCycleTime" BO_ 796 500;
+BA_ "VFrameFormat" BO_ 796 14;
+BA_ "GenMsgSendType" BO_ 919 0;
+BA_ "GenMsgCycleTime" BO_ 919 500;
+BA_ "VFrameFormat" BO_ 919 14;
+BA_ "GenMsgSendType" BO_ 648 0;
+BA_ "GenMsgCycleTime" BO_ 648 40;
+BA_ "VFrameFormat" BO_ 648 14;
+BA_ "GenMsgSendType" BO_ 433 0;
+BA_ "GenMsgCycleTime" BO_ 433 10;
+BA_ "VFrameFormat" BO_ 433 14;
+BA_ "GenMsgSendType" BO_ 349 0;
+BA_ "GenMsgCycleTime" BO_ 349 10;
+BA_ "VFrameFormat" BO_ 349 14;
+BA_ "GenMsgSendType" BO_ 759 0;
+BA_ "GenMsgCycleTime" BO_ 759 100;
+BA_ "VFrameFormat" BO_ 759 14;
+BA_ "GenMsgSendType" BO_ 1297 0;
+BA_ "GenMsgCycleTime" BO_ 1297 500;
+BA_ "VFrameFormat" BO_ 1297 14;
+BA_ "GenMsgSendType" BO_ 688 0;
+BA_ "GenMsgCycleTime" BO_ 688 50;
+BA_ "VFrameFormat" BO_ 688 14;
+BA_ "GenMsgSendType" BO_ 2033 1;
+BA_ "GenMsgCycleTime" BO_ 2033 0;
+BA_ "VFrameFormat" BO_ 2033 14;
+BA_ "GenMsgSendType" BO_ 2041 1;
+BA_ "GenMsgCycleTime" BO_ 2041 0;
+BA_ "VFrameFormat" BO_ 2041 14;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "VFrameFormat" BO_ 2015 14;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Rollover 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Rollover "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Rollover 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Rollover 0;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Right 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Right "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Right 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Right 0;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Rear 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Rear "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Rear 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Rear 0;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Micro 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Micro "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Micro 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Micro 0;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Left 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Left "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Left 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Left 0;
+BA_ "GenSigStartValue" SG_ 3221225472 SRS_CrashOut_Front 0;
+BA_ "GenSigInvalidValue" SG_ 3221225472 SRS_CrashOut_Front "/";
+BA_ "GenSigCycleTime" SG_ 3221225472 SRS_CrashOut_Front 500;
+BA_ "GenSigSendType" SG_ 3221225472 SRS_CrashOut_Front 0;
+BA_ "GenSigStartValue" SG_ 384 EpsSasSteerAg 0;
+BA_ "GenSigInvalidValue" SG_ 384 EpsSasSteerAg "32767";
+BA_ "GenSigCycleTime" SG_ 384 EpsSasSteerAg 10;
+BA_ "GenSigSendType" SG_ 384 EpsSasSteerAg 0;
+BA_ "GenSigStartValue" SG_ 384 EpsSasSteerAgVld 0;
+BA_ "GenSigInvalidValue" SG_ 384 EpsSasSteerAgVld "1";
+BA_ "GenSigCycleTime" SG_ 384 EpsSasSteerAgVld 10;
+BA_ "GenSigSendType" SG_ 384 EpsSasSteerAgVld 0;
+BA_ "GenSigStartValue" SG_ 342 EpbSts 0;
+BA_ "GenSigInvalidValue" SG_ 342 EpbSts "NA";
+BA_ "GenSigCycleTime" SG_ 342 EpbSts 10;
+BA_ "GenSigSendType" SG_ 342 EpbSts 0;
+BA_ "GenSigStartValue" SG_ 342 EpbFailrSts 0;
+BA_ "GenSigInvalidValue" SG_ 342 EpbFailrSts "/";
+BA_ "GenSigCycleTime" SG_ 342 EpbFailrSts 10;
+BA_ "GenSigSendType" SG_ 342 EpbFailrSts 0;
+BA_ "GenSigStartValue" SG_ 450 EspEbdFailr 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspEbdFailr "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspEbdFailr 10;
+BA_ "GenSigSendType" SG_ 450 EspEbdFailr 0;
+BA_ "GenSigStartValue" SG_ 450 EspVdcActvSts 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspVdcActvSts "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspVdcActvSts 10;
+BA_ "GenSigSendType" SG_ 450 EspVdcActvSts 0;
+BA_ "GenSigStartValue" SG_ 450 EspTcsActvSts 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspTcsActvSts "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspTcsActvSts 10;
+BA_ "GenSigSendType" SG_ 450 EspTcsActvSts 0;
+BA_ "GenSigStartValue" SG_ 450 EspActvSts 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspActvSts "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspActvSts 10;
+BA_ "GenSigSendType" SG_ 450 EspActvSts 0;
+BA_ "GenSigStartValue" SG_ 450 EspAbsActv 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspAbsActv "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspAbsActv 10;
+BA_ "GenSigSendType" SG_ 450 EspAbsActv 0;
+BA_ "GenSigStartValue" SG_ 450 EspTcsFailr 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspTcsFailr "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspTcsFailr 10;
+BA_ "GenSigSendType" SG_ 450 EspTcsFailr 0;
+BA_ "GenSigStartValue" SG_ 450 EspFctOpenSts 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspFctOpenSts "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspFctOpenSts 10;
+BA_ "GenSigSendType" SG_ 450 EspFctOpenSts 0;
+BA_ "GenSigStartValue" SG_ 450 EspAbsFailr 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspAbsFailr "NA";
+BA_ "GenSigCycleTime" SG_ 450 EspAbsFailr 10;
+BA_ "GenSigSendType" SG_ 450 EspAbsFailr 0;
+BA_ "GenSigStartValue" SG_ 450 EspVehSpdVld 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspVehSpdVld "1";
+BA_ "GenSigCycleTime" SG_ 450 EspVehSpdVld 10;
+BA_ "GenSigSendType" SG_ 450 EspVehSpdVld 0;
+BA_ "GenSigStartValue" SG_ 450 EspVehSpd 0;
+BA_ "GenSigInvalidValue" SG_ 450 EspVehSpd "8191";
+BA_ "GenSigCycleTime" SG_ 450 EspVehSpd 10;
+BA_ "GenSigSendType" SG_ 450 EspVehSpd 0;
+BA_ "GenSigStartValue" SG_ 378 IbBrkPedlStsGbVld 0;
+BA_ "GenSigInvalidValue" SG_ 378 IbBrkPedlStsGbVld "2";
+BA_ "GenSigCycleTime" SG_ 378 IbBrkPedlStsGbVld 10;
+BA_ "GenSigSendType" SG_ 378 IbBrkPedlStsGbVld 0;
+BA_ "GenSigStartValue" SG_ 378 IbBrkPedlStsGb 0;
+BA_ "GenSigInvalidValue" SG_ 378 IbBrkPedlStsGb "255";
+BA_ "GenSigCycleTime" SG_ 378 IbBrkPedlStsGb 10;
+BA_ "GenSigSendType" SG_ 378 IbBrkPedlStsGb 0;
+BA_ "GenSigStartValue" SG_ 378 IbBrkPedlTrvlDrvrVld 0;
+BA_ "GenSigInvalidValue" SG_ 378 IbBrkPedlTrvlDrvrVld "2";
+BA_ "GenSigCycleTime" SG_ 378 IbBrkPedlTrvlDrvrVld 10;
+BA_ "GenSigSendType" SG_ 378 IbBrkPedlTrvlDrvrVld 0;
+BA_ "GenSigStartValue" SG_ 378 IbBrkPedlTrvlDrvr 320;
+BA_ "GenSigInvalidValue" SG_ 378 IbBrkPedlTrvlDrvr "4095";
+BA_ "GenSigCycleTime" SG_ 378 IbBrkPedlTrvlDrvr 10;
+BA_ "GenSigSendType" SG_ 378 IbBrkPedlTrvlDrvr 0;
+BA_ "GenSigStartValue" SG_ 353 EspCdpActv 0;
+BA_ "GenSigInvalidValue" SG_ 353 EspCdpActv "NA";
+BA_ "GenSigCycleTime" SG_ 353 EspCdpActv 10;
+BA_ "GenSigSendType" SG_ 353 EspCdpActv 0;
+BA_ "GenSigStartValue" SG_ 353 ESP_AWBactive 0;
+BA_ "GenSigInvalidValue" SG_ 353 ESP_AWBactive "/";
+BA_ "GenSigCycleTime" SG_ 353 ESP_AWBactive 10;
+BA_ "GenSigSendType" SG_ 353 ESP_AWBactive 0;
+BA_ "GenSigStartValue" SG_ 353 ESP_AEBdecActive 0;
+BA_ "GenSigInvalidValue" SG_ 353 ESP_AEBdecActive "NA";
+BA_ "GenSigCycleTime" SG_ 353 ESP_AEBdecActive 10;
+BA_ "GenSigSendType" SG_ 353 ESP_AEBdecActive 0;
+BA_ "GenSigStartValue" SG_ 353 ESP_AEBAvailable 0;
+BA_ "GenSigInvalidValue" SG_ 353 ESP_AEBAvailable "/";
+BA_ "GenSigCycleTime" SG_ 353 ESP_AEBAvailable 10;
+BA_ "GenSigSendType" SG_ 353 ESP_AEBAvailable 0;
+BA_ "GenSigStartValue" SG_ 722 CdcTotMilg 0;
+BA_ "GenSigInvalidValue" SG_ 722 CdcTotMilg "16777215";
+BA_ "GenSigCycleTime" SG_ 722 CdcTotMilg 100;
+BA_ "GenSigSendType" SG_ 722 CdcTotMilg 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc2Sts 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc2Sts "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc2Sts 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc2Sts 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc2MidByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc2MidByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc2MidByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc2MidByte 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc2LoByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc2LoByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc2LoByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc2LoByte 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc2HiByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc2HiByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc2HiByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc2HiByte 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc1Sts 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc1Sts "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc1Sts 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc1Sts 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc1MidByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc1MidByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc1MidByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc1MidByte 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc1LoByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc1LoByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc1LoByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc1LoByte 0;
+BA_ "GenSigStartValue" SG_ 1696 SrsDtc1HiByte 0;
+BA_ "GenSigInvalidValue" SG_ 1696 SrsDtc1HiByte "NA";
+BA_ "GenSigCycleTime" SG_ 1696 SrsDtc1HiByte 500;
+BA_ "GenSigSendType" SG_ 1696 SrsDtc1HiByte 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers6 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers6 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers6 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers6 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers5 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers5 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers5 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers5 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers4 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers4 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers4 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers4 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers3 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers3 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers3 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers3 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers2 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers2 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers2 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers2 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers1 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers1 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers1 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers1 0;
+BA_ "GenSigStartValue" SG_ 1514 SrsHwVers0 0;
+BA_ "GenSigInvalidValue" SG_ 1514 SrsHwVers0 "NA";
+BA_ "GenSigCycleTime" SG_ 1514 SrsHwVers0 1000;
+BA_ "GenSigSendType" SG_ 1514 SrsHwVers0 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers6 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers6 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers6 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers6 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers5 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers5 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers5 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers5 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers4 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers4 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers4 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers4 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers3 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers3 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers3 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers3 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers2 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers2 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers2 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers2 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers1 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers1 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers1 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers1 0;
+BA_ "GenSigStartValue" SG_ 1531 SrsSwVers0 0;
+BA_ "GenSigInvalidValue" SG_ 1531 SrsSwVers0 "NA";
+BA_ "GenSigCycleTime" SG_ 1531 SrsSwVers0 1000;
+BA_ "GenSigSendType" SG_ 1531 SrsSwVers0 0;
+BA_ "GenSigStartValue" SG_ 80 SrsDrvrBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsDrvrBucSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsDrvrBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsDrvrBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsCycCntr050 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsCycCntr050 "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsCycCntr050 500;
+BA_ "GenSigSendType" SG_ 80 SrsCycCntr050 0;
+BA_ "GenSigStartValue" SG_ 80 SrsCrcChk050 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsCrcChk050 "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsCrcChk050 500;
+BA_ "GenSigSendType" SG_ 80 SrsCrcChk050 0;
+BA_ "GenSigStartValue" SG_ 80 SrsPassBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsPassBucSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsPassBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsPassBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsRi3rdBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsRi3rdBucSwtSts "/";
+BA_ "GenSigCycleTime" SG_ 80 SrsRi3rdBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsRi3rdBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsMid3rdBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsMid3rdBucSwtSts "/";
+BA_ "GenSigCycleTime" SG_ 80 SrsMid3rdBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsMid3rdBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsLe3rdBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsLe3rdBucSwtSts "/";
+BA_ "GenSigCycleTime" SG_ 80 SrsLe3rdBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsLe3rdBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsWarnLampSts 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsWarnLampSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsWarnLampSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsWarnLampSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsRi2ndBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsRi2ndBucSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsRi2ndBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsRi2ndBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsPadIndcn 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsPadIndcn "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsPadIndcn 500;
+BA_ "GenSigSendType" SG_ 80 SrsPadIndcn 0;
+BA_ "GenSigStartValue" SG_ 80 SrsMid2ndBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsMid2ndBucSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsMid2ndBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsMid2ndBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsLe2ndBucSwtSts 2;
+BA_ "GenSigInvalidValue" SG_ 80 SrsLe2ndBucSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsLe2ndBucSwtSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsLe2ndBucSwtSts 0;
+BA_ "GenSigStartValue" SG_ 80 SrsCrashOutpStsChks 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsCrashOutpStsChks "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsCrashOutpStsChks 500;
+BA_ "GenSigSendType" SG_ 80 SrsCrashOutpStsChks 0;
+BA_ "GenSigStartValue" SG_ 80 SrsCrashOutpSts 0;
+BA_ "GenSigInvalidValue" SG_ 80 SrsCrashOutpSts "NA";
+BA_ "GenSigCycleTime" SG_ 80 SrsCrashOutpSts 500;
+BA_ "GenSigSendType" SG_ 80 SrsCrashOutpSts 0;
+BA_ "GenSigStartValue" SG_ 338 AD_Authernticator_152 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_Authernticator_152 "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_Authernticator_152 10;
+BA_ "GenSigSendType" SG_ 338 AD_Authernticator_152 0;
+BA_ "GenSigStartValue" SG_ 338 AD_MsgCnt_152 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_MsgCnt_152 "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_MsgCnt_152 10;
+BA_ "GenSigSendType" SG_ 338 AD_MsgCnt_152 0;
+BA_ "GenSigStartValue" SG_ 338 AD_ResetFlag_152 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_ResetFlag_152 "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_ResetFlag_152 10;
+BA_ "GenSigSendType" SG_ 338 AD_ResetFlag_152 0;
+BA_ "GenSigStartValue" SG_ 338 ESP1_CDDActive 0;
+BA_ "GenSigInvalidValue" SG_ 338 ESP1_CDDActive "/";
+BA_ "GenSigCycleTime" SG_ 338 ESP1_CDDActive 10;
+BA_ "GenSigSendType" SG_ 338 ESP1_CDDActive 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetLngRange 500;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetLngRange "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetLngRange 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetLngRange 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetLatRelSpeed 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetLatRelSpeed "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetLatRelSpeed 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetLatRelSpeed 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetLatRange 500;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetLatRange "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetLatRange 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetLatRange 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetProb 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetProb "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetProb 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetProb 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetType 15;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetType "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetType 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetType 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetTTC 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetTTC "63";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetTTC 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetTTC 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBTargetRelSpeed 250;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBTargetRelSpeed "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBTargetRelSpeed 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBTargetRelSpeed 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBStatus 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBStatus "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBStatus 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBStatus 0;
+BA_ "GenSigStartValue" SG_ 338 AD_ACCMode 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_ACCMode "7";
+BA_ "GenSigCycleTime" SG_ 338 AD_ACCMode 10;
+BA_ "GenSigSendType" SG_ 338 AD_ACCMode 0;
+BA_ "GenSigStartValue" SG_ 338 AD_CDDActive 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_CDDActive "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_CDDActive 10;
+BA_ "GenSigSendType" SG_ 338 AD_CDDActive 0;
+BA_ "GenSigStartValue" SG_ 338 AD_AEBActive 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_AEBActive "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_AEBActive 10;
+BA_ "GenSigSendType" SG_ 338 AD_AEBActive 0;
+BA_ "GenSigStartValue" SG_ 338 AD_CRCCheck_152 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_CRCCheck_152 "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_CRCCheck_152 10;
+BA_ "GenSigSendType" SG_ 338 AD_CRCCheck_152 0;
+BA_ "GenSigStartValue" SG_ 338 AD_RollingCounter_152 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_RollingCounter_152 "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_RollingCounter_152 10;
+BA_ "GenSigSendType" SG_ 338 AD_RollingCounter_152 0;
+BA_ "GenSigStartValue" SG_ 338 AD_FCWPreWarning 0;
+BA_ "GenSigInvalidValue" SG_ 338 AD_FCWPreWarning "/";
+BA_ "GenSigCycleTime" SG_ 338 AD_FCWPreWarning 10;
+BA_ "GenSigSendType" SG_ 338 AD_FCWPreWarning 0;
+BA_ "GenSigStartValue" SG_ 513 AD_Left_FCTALAlert 0;
+BA_ "GenSigInvalidValue" SG_ 513 AD_Left_FCTALAlert "/";
+BA_ "GenSigCycleTime" SG_ 513 AD_Left_FCTALAlert 50;
+BA_ "GenSigSendType" SG_ 513 AD_Left_FCTALAlert 0;
+BA_ "GenSigStartValue" SG_ 513 AD_Right_FCTARAlert 0;
+BA_ "GenSigInvalidValue" SG_ 513 AD_Right_FCTARAlert "/";
+BA_ "GenSigCycleTime" SG_ 513 AD_Right_FCTARAlert 50;
+BA_ "GenSigSendType" SG_ 513 AD_Right_FCTARAlert 0;
+BA_ "GenSigStartValue" SG_ 941 AD_IACCMode 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_IACCMode "7";
+BA_ "GenSigCycleTime" SG_ 941 AD_IACCMode 100;
+BA_ "GenSigSendType" SG_ 941 AD_IACCMode 0;
+BA_ "GenSigStartValue" SG_ 941 AD_AutoDriveState 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_AutoDriveState "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_AutoDriveState 100;
+BA_ "GenSigSendType" SG_ 941 AD_AutoDriveState 0;
+BA_ "GenSigStartValue" SG_ 941 DMS_DrowsinessStatus 0;
+BA_ "GenSigInvalidValue" SG_ 941 DMS_DrowsinessStatus "7";
+BA_ "GenSigCycleTime" SG_ 941 DMS_DrowsinessStatus 100;
+BA_ "GenSigSendType" SG_ 941 DMS_DrowsinessStatus 0;
+BA_ "GenSigStartValue" SG_ 941 DMS_DriverEyesGazeArea 0;
+BA_ "GenSigInvalidValue" SG_ 941 DMS_DriverEyesGazeArea "15";
+BA_ "GenSigCycleTime" SG_ 941 DMS_DriverEyesGazeArea 100;
+BA_ "GenSigSendType" SG_ 941 DMS_DriverEyesGazeArea 0;
+BA_ "GenSigStartValue" SG_ 941 DMS_DistractionStatus 0;
+BA_ "GenSigInvalidValue" SG_ 941 DMS_DistractionStatus "3";
+BA_ "GenSigCycleTime" SG_ 941 DMS_DistractionStatus 100;
+BA_ "GenSigSendType" SG_ 941 DMS_DistractionStatus 0;
+BA_ "GenSigStartValue" SG_ 941 AD_SafeStopSts 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_SafeStopSts "3";
+BA_ "GenSigCycleTime" SG_ 941 AD_SafeStopSts 100;
+BA_ "GenSigSendType" SG_ 941 AD_SafeStopSts 0;
+BA_ "GenSigStartValue" SG_ 941 AD_TakeoverReqAtIPFail 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_TakeoverReqAtIPFail "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_TakeoverReqAtIPFail 100;
+BA_ "GenSigSendType" SG_ 941 AD_TakeoverReqAtIPFail 0;
+BA_ "GenSigStartValue" SG_ 941 AD_EyesOnWarnning 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_EyesOnWarnning "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_EyesOnWarnning 100;
+BA_ "GenSigSendType" SG_ 941 AD_EyesOnWarnning 0;
+BA_ "GenSigStartValue" SG_ 941 AD_LatTakeoverReq 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_LatTakeoverReq "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_LatTakeoverReq 100;
+BA_ "GenSigSendType" SG_ 941 AD_LatTakeoverReq 0;
+BA_ "GenSigStartValue" SG_ 941 AD_HandsOnReq 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_HandsOnReq "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_HandsOnReq 100;
+BA_ "GenSigSendType" SG_ 941 AD_HandsOnReq 0;
+BA_ "GenSigStartValue" SG_ 941 AD_LngTakeOverReq 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_LngTakeOverReq "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_LngTakeOverReq 100;
+BA_ "GenSigSendType" SG_ 941 AD_LngTakeOverReq 0;
+BA_ "GenSigStartValue" SG_ 941 AD_DriverHandsOffStatus 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_DriverHandsOffStatus "3";
+BA_ "GenSigCycleTime" SG_ 941 AD_DriverHandsOffStatus 100;
+BA_ "GenSigSendType" SG_ 941 AD_DriverHandsOffStatus 0;
+BA_ "GenSigStartValue" SG_ 941 AD_TargetBasedLateralControl 0;
+BA_ "GenSigInvalidValue" SG_ 941 AD_TargetBasedLateralControl "/";
+BA_ "GenSigCycleTime" SG_ 941 AD_TargetBasedLateralControl 100;
+BA_ "GenSigSendType" SG_ 941 AD_TargetBasedLateralControl 0;
+BA_ "GenSigStartValue" SG_ 941 ACC_CRCCheck_3AD 0;
+BA_ "GenSigInvalidValue" SG_ 941 ACC_CRCCheck_3AD "/";
+BA_ "GenSigCycleTime" SG_ 941 ACC_CRCCheck_3AD 100;
+BA_ "GenSigSendType" SG_ 941 ACC_CRCCheck_3AD 0;
+BA_ "GenSigStartValue" SG_ 941 ACC_RollingCounter_3AD 0;
+BA_ "GenSigInvalidValue" SG_ 941 ACC_RollingCounter_3AD "/";
+BA_ "GenSigCycleTime" SG_ 941 ACC_RollingCounter_3AD 100;
+BA_ "GenSigSendType" SG_ 941 ACC_RollingCounter_3AD 0;
+BA_ "GenSigStartValue" SG_ 796 SRS_CrashOut_DetectionCrashType 0;
+BA_ "GenSigInvalidValue" SG_ 796 SRS_CrashOut_DetectionCrashType "/";
+BA_ "GenSigCycleTime" SG_ 796 SRS_CrashOut_DetectionCrashType 500;
+BA_ "GenSigSendType" SG_ 796 SRS_CrashOut_DetectionCrashType 0;
+BA_ "GenSigStartValue" SG_ 796 SrsCycCntr051 0;
+BA_ "GenSigInvalidValue" SG_ 796 SrsCycCntr051 "/";
+BA_ "GenSigCycleTime" SG_ 796 SrsCycCntr051 500;
+BA_ "GenSigSendType" SG_ 796 SrsCycCntr051 0;
+BA_ "GenSigStartValue" SG_ 796 SrsCrcChk051 0;
+BA_ "GenSigInvalidValue" SG_ 796 SrsCrcChk051 "/";
+BA_ "GenSigCycleTime" SG_ 796 SrsCrcChk051 500;
+BA_ "GenSigSendType" SG_ 796 SrsCrcChk051 0;
+BA_ "GenSigStartValue" SG_ 919 VIUFL_OTAmode_Cntr 0;
+BA_ "GenSigInvalidValue" SG_ 919 VIUFL_OTAmode_Cntr "NA";
+BA_ "GenSigCycleTime" SG_ 919 VIUFL_OTAmode_Cntr 500;
+BA_ "GenSigSendType" SG_ 919 VIUFL_OTAmode_Cntr 0;
+BA_ "GenSigStartValue" SG_ 919 VIUFL_OTAmode_Chks 0;
+BA_ "GenSigInvalidValue" SG_ 919 VIUFL_OTAmode_Chks "NA";
+BA_ "GenSigCycleTime" SG_ 919 VIUFL_OTAmode_Chks 500;
+BA_ "GenSigSendType" SG_ 919 VIUFL_OTAmode_Chks 0;
+BA_ "GenSigStartValue" SG_ 919 VIUFL_OTAmode 0;
+BA_ "GenSigInvalidValue" SG_ 919 VIUFL_OTAmode "NA";
+BA_ "GenSigCycleTime" SG_ 919 VIUFL_OTAmode 500;
+BA_ "GenSigSendType" SG_ 919 VIUFL_OTAmode 0;
+BA_ "GenSigStartValue" SG_ 648 BcmTurnIndcrRi 0;
+BA_ "GenSigInvalidValue" SG_ 648 BcmTurnIndcrRi "3";
+BA_ "GenSigCycleTime" SG_ 648 BcmTurnIndcrRi 40;
+BA_ "GenSigSendType" SG_ 648 BcmTurnIndcrRi 0;
+BA_ "GenSigStartValue" SG_ 648 BcmTurnIndcrLe 0;
+BA_ "GenSigInvalidValue" SG_ 648 BcmTurnIndcrLe "3";
+BA_ "GenSigCycleTime" SG_ 648 BcmTurnIndcrLe 40;
+BA_ "GenSigSendType" SG_ 648 BcmTurnIndcrLe 0;
+BA_ "GenSigStartValue" SG_ 648 BcmEmgyLiSts 0;
+BA_ "GenSigInvalidValue" SG_ 648 BcmEmgyLiSts "3";
+BA_ "GenSigCycleTime" SG_ 648 BcmEmgyLiSts 40;
+BA_ "GenSigSendType" SG_ 648 BcmEmgyLiSts 0;
+BA_ "GenSigStartValue" SG_ 648 BCM_TurnLightSwitchSts 0;
+BA_ "GenSigInvalidValue" SG_ 648 BCM_TurnLightSwitchSts "3";
+BA_ "GenSigCycleTime" SG_ 648 BCM_TurnLightSwitchSts 40;
+BA_ "GenSigSendType" SG_ 648 BCM_TurnLightSwitchSts 0;
+BA_ "GenSigStartValue" SG_ 648 BcmPwrStsFb 0;
+BA_ "GenSigInvalidValue" SG_ 648 BcmPwrStsFb "/";
+BA_ "GenSigCycleTime" SG_ 648 BcmPwrStsFb 40;
+BA_ "GenSigSendType" SG_ 648 BcmPwrStsFb 0;
+BA_ "GenSigStartValue" SG_ 433 VcuAccrPedlPosnVld 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuAccrPedlPosnVld "1";
+BA_ "GenSigCycleTime" SG_ 433 VcuAccrPedlPosnVld 10;
+BA_ "GenSigSendType" SG_ 433 VcuAccrPedlPosnVld 0;
+BA_ "GenSigStartValue" SG_ 433 VcuAccrPedlPosn 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuAccrPedlPosn "1023";
+BA_ "GenSigCycleTime" SG_ 433 VcuAccrPedlPosn 10;
+BA_ "GenSigSendType" SG_ 433 VcuAccrPedlPosn 0;
+BA_ "GenSigStartValue" SG_ 433 VcuSimnEpbSwtStsVld 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuSimnEpbSwtStsVld "NA";
+BA_ "GenSigCycleTime" SG_ 433 VcuSimnEpbSwtStsVld 10;
+BA_ "GenSigSendType" SG_ 433 VcuSimnEpbSwtStsVld 0;
+BA_ "GenSigStartValue" SG_ 433 VcuSimnEpbSwtSts 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuSimnEpbSwtSts "NA";
+BA_ "GenSigCycleTime" SG_ 433 VcuSimnEpbSwtSts 10;
+BA_ "GenSigSendType" SG_ 433 VcuSimnEpbSwtSts 0;
+BA_ "GenSigStartValue" SG_ 433 VcuVehGearPosnVld 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuVehGearPosnVld "1";
+BA_ "GenSigCycleTime" SG_ 433 VcuVehGearPosnVld 10;
+BA_ "GenSigSendType" SG_ 433 VcuVehGearPosnVld 0;
+BA_ "GenSigStartValue" SG_ 433 VcuCalcnAccrPedlPosnVld 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuCalcnAccrPedlPosnVld "1";
+BA_ "GenSigCycleTime" SG_ 433 VcuCalcnAccrPedlPosnVld 10;
+BA_ "GenSigSendType" SG_ 433 VcuCalcnAccrPedlPosnVld 0;
+BA_ "GenSigStartValue" SG_ 433 VcuCalcnAccrPedlPosn 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuCalcnAccrPedlPosn "1023";
+BA_ "GenSigCycleTime" SG_ 433 VcuCalcnAccrPedlPosn 10;
+BA_ "GenSigSendType" SG_ 433 VcuCalcnAccrPedlPosn 0;
+BA_ "GenSigStartValue" SG_ 433 VcuGearPosn 0;
+BA_ "GenSigInvalidValue" SG_ 433 VcuGearPosn "NA";
+BA_ "GenSigCycleTime" SG_ 433 VcuGearPosn 10;
+BA_ "GenSigSendType" SG_ 433 VcuGearPosn 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_YawRateValid 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_YawRateValid "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_YawRateValid 10;
+BA_ "GenSigSendType" SG_ 349 ESP_YawRateValid 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_YawRate 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_YawRate "16383";
+BA_ "GenSigCycleTime" SG_ 349 ESP_YawRate 10;
+BA_ "GenSigSendType" SG_ 349 ESP_YawRate 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_RollingCounter_278 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_RollingCounter_278 "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_RollingCounter_278 10;
+BA_ "GenSigSendType" SG_ 349 ESP_RollingCounter_278 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_LatAccelValid 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_LatAccelValid "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_LatAccelValid 10;
+BA_ "GenSigSendType" SG_ 349 ESP_LatAccelValid 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_LatAccel 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_LatAccel "255";
+BA_ "GenSigCycleTime" SG_ 349 ESP_LatAccel 10;
+BA_ "GenSigSendType" SG_ 349 ESP_LatAccel 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_CRCCheck_278 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_CRCCheck_278 "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_CRCCheck_278 10;
+BA_ "GenSigSendType" SG_ 349 ESP_CRCCheck_278 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_LongAccelValid 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_LongAccelValid "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_LongAccelValid 10;
+BA_ "GenSigSendType" SG_ 349 ESP_LongAccelValid 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_LongAccel 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_LongAccel "1023";
+BA_ "GenSigCycleTime" SG_ 349 ESP_LongAccel 10;
+BA_ "GenSigSendType" SG_ 349 ESP_LongAccel 0;
+BA_ "GenSigStartValue" SG_ 349 ESP_Calibrated 0;
+BA_ "GenSigInvalidValue" SG_ 349 ESP_Calibrated "/";
+BA_ "GenSigCycleTime" SG_ 349 ESP_Calibrated 10;
+BA_ "GenSigSendType" SG_ 349 ESP_Calibrated 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiYear 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiYear "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiYear 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiYear 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiVld 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiVld "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiVld 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiVld 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiSec 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiSec "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiSec 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiSec 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiMth 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiMth "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiMth 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiMth 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiMins 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiMins "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiMins 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiMins 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiHr 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiHr "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiHr 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiHr 0;
+BA_ "GenSigStartValue" SG_ 759 TboxLocalTiDate 0;
+BA_ "GenSigInvalidValue" SG_ 759 TboxLocalTiDate "NA";
+BA_ "GenSigCycleTime" SG_ 759 TboxLocalTiDate 100;
+BA_ "GenSigSendType" SG_ 759 TboxLocalTiDate 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsCycCntr511 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsCycCntr511 "NA";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsCycCntr511 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsCycCntr511 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsCrcChk511 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsCrcChk511 "NA";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsCrcChk511 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsCrcChk511 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsSysFailrWarn 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsSysFailrWarn "/";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsSysFailrWarn 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsSysFailrWarn 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsRiReTirePWarn 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsRiReTirePWarn "/";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsRiReTirePWarn 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsRiReTirePWarn 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsRiFrntTirePWarn 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsRiFrntTirePWarn "/";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsRiFrntTirePWarn 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsRiFrntTirePWarn 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsLeReTirePWarn 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsLeReTirePWarn "/";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsLeReTirePWarn 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsLeReTirePWarn 0;
+BA_ "GenSigStartValue" SG_ 1297 TpmsLeFrntTirePWarn 0;
+BA_ "GenSigInvalidValue" SG_ 1297 TpmsLeFrntTirePWarn "/";
+BA_ "GenSigCycleTime" SG_ 1297 TpmsLeFrntTirePWarn 500;
+BA_ "GenSigSendType" SG_ 1297 TpmsLeFrntTirePWarn 0;
+BA_ "GenSigStartValue" SG_ 688 VcuLoSocPowerOffFlag 0;
+BA_ "GenSigInvalidValue" SG_ 688 VcuLoSocPowerOffFlag "NA";
+BA_ "GenSigCycleTime" SG_ 688 VcuLoSocPowerOffFlag 50;
+BA_ "GenSigSendType" SG_ 688 VcuLoSocPowerOffFlag 0;
+BA_ "GenSigStartValue" SG_ 688 VcuCCMode 0;
+BA_ "GenSigInvalidValue" SG_ 688 VcuCCMode "/";
+BA_ "GenSigCycleTime" SG_ 688 VcuCCMode 50;
+BA_ "GenSigSendType" SG_ 688 VcuCCMode 0;
+BA_ "GenSigStartValue" SG_ 2033 Diagnose_message201 0;
+BA_ "GenSigInvalidValue" SG_ 2033 Diagnose_message201 "NA";
+BA_ "GenSigCycleTime" SG_ 2033 Diagnose_message201 0;
+BA_ "GenSigSendType" SG_ 2033 Diagnose_message201 1;
+BA_ "GenSigStartValue" SG_ 2041 Diagnose_message203 0;
+BA_ "GenSigInvalidValue" SG_ 2041 Diagnose_message203 "NA";
+BA_ "GenSigCycleTime" SG_ 2041 Diagnose_message203 0;
+BA_ "GenSigSendType" SG_ 2041 Diagnose_message203 1;
+BA_ "GenSigStartValue" SG_ 2015 Diagnose_message245 0;
+BA_ "GenSigInvalidValue" SG_ 2015 Diagnose_message245 "NA";
+BA_ "GenSigCycleTime" SG_ 2015 Diagnose_message245 0;
+BA_ "GenSigSendType" SG_ 2015 Diagnose_message245 1;
+VAL_ 3221225472 SRS_CrashOut_Rollover 0 "No Rollover" 1 "Rollover" ;
+VAL_ 3221225472 SRS_CrashOut_Right 0 "No Crash" 1 "Right Side Carsh" ;
+VAL_ 3221225472 SRS_CrashOut_Rear 0 "No Crash" 1 "Rear Crash" ;
+VAL_ 3221225472 SRS_CrashOut_Micro 0 "No Crash" 1 "Micro Crash" ;
+VAL_ 3221225472 SRS_CrashOut_Left 0 "No Crash" 1 "Left Side Crash" ;
+VAL_ 3221225472 SRS_CrashOut_Front 0 "No Crash" 1 "Front Crash" ;
+VAL_ 384 EpsSasSteerAgVld 0 "Valid" 1 "Invalid" ;
+VAL_ 342 EpbSts 0 "both brakes released" 1 "both brakes applied" 2 "both brakes Releasing" 3 "both brakes Locking" 4 "unknown" ;
+VAL_ 342 EpbFailrSts 0 "No error" 1 "Not defined" 2 "Not defined" 3 "error" ;
+VAL_ 450 EspEbdFailr 0 "No error" 1 "Error" ;
+VAL_ 450 EspVdcActvSts 0 "Not active" 1 "active" ;
+VAL_ 450 EspTcsActvSts 0 "Not active" 1 "active" ;
+VAL_ 450 EspActvSts 0 "Not active" 1 "active" ;
+VAL_ 450 EspAbsActv 0 "Not active" 1 "active" ;
+VAL_ 450 EspTcsFailr 0 "No error" 1 "Error" ;
+VAL_ 450 EspFctOpenSts 0 "Off" 1 "ON" ;
+VAL_ 450 EspAbsFailr 0 "No error" 1 "Error" ;
+VAL_ 450 EspVehSpdVld 0 "Valid" 1 "Invalid" ;
+VAL_ 378 IbBrkPedlStsGbVld 0 "NotInitialized" 1 "Normal" 2 "Invalid" ;
+VAL_ 378 IbBrkPedlStsGb 0 "�ƶ�δ����" 101 "�ƶ�����" ;
+VAL_ 378 IbBrkPedlTrvlDrvrVld 0 "NotInitialized" 1 "Normal" 2 "Invalid" ;
+VAL_ 353 EspCdpActv 0 "Not active" 1 "active" ;
+VAL_ 353 ESP_AWBactive 0 "notactive" 1 "active" ;
+VAL_ 353 ESP_AEBdecActive 0 "notactive" 1 "active" ;
+VAL_ 353 ESP_AEBAvailable 0 "notavailable" 1 "available" ;
+VAL_ 1514 SrsHwVers6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1514 SrsHwVers5 46 "." ;
+VAL_ 1514 SrsHwVers4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1514 SrsHwVers3 46 "." ;
+VAL_ 1514 SrsHwVers2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1514 SrsHwVers1 87 "W" ;
+VAL_ 1514 SrsHwVers0 72 "H" ;
+VAL_ 1531 SrsSwVers6 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1531 SrsSwVers5 46 "." ;
+VAL_ 1531 SrsSwVers4 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1531 SrsSwVers3 46 "." ;
+VAL_ 1531 SrsSwVers2 48 "0" 49 "1" 50 "2" 51 "3" 52 "4" 53 "5" 54 "6" 55 "7" 56 "8" 57 "9" 65 "A" 66 "B" 67 "C" 68 "D" 69 "E" 70 "F" 71 "G" 72 "H" 73 "I" 74 "J" 75 "K" 76 "L" 77 "M" 78 "N" 79 "O" 80 "P" 81 "Q" 82 "R" 83 "S" 84 "T" 85 "U" 86 "V" 87 "W" 88 "X" 89 "Y" 90 "Z" ;
+VAL_ 1531 SrsSwVers1 87 "W" ;
+VAL_ 1531 SrsSwVers0 83 "S" ;
+VAL_ 80 SrsDrvrBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsPassBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsRi3rdBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsMid3rdBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsLe3rdBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsWarnLampSts 0 "Lampoff" 1 "Lampon" 2 "LampFlashing" 3 "NotUsed" ;
+VAL_ 80 SrsRi2ndBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsPadIndcn 0 "PAB on and Lamp off" 1 "PAB off and Lamp on" ;
+VAL_ 80 SrsMid2ndBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsLe2ndBucSwtSts 0 "Buckled" 1 "Unbuckle" 2 "Not defined" 3 "Not Used" ;
+VAL_ 80 SrsCrashOutpStsChks 0 "(SRS_CrashOutputStatus) XOR 0xF" ;
+VAL_ 80 SrsCrashOutpSts 0 "NoCrash" 1 "crash" ;
+VAL_ 338 ESP1_CDDActive 0 "notactive" 1 "active" ;
+VAL_ 338 AD_AEBTargetLngRange 0 "70~180" 501 "reserved" 511 "no display" ;
+VAL_ 338 AD_AEBTargetLatRange 0 "50=50m" 1001 "reserved" ;
+VAL_ 338 AD_AEBTargetType 0 "no display" 1 "sedan" 2 "motorcycle" 3 "pedestrian" 4 "Bicycle" 5 "Bus" 7 "truck" 8 "reserved" 15 "other" ;
+VAL_ 338 AD_AEBTargetTTC 1 "0.1~6" 0 "��Ŀ��" 63 "invalid" ;
+VAL_ 338 AD_AEBStatus 0 "off" 1 "passive" 2 "failure" 3 " standby" 4 "active" 5 "reserved" ;
+VAL_ 338 AD_ACCMode 0 "OFF mode" 1 "Passive mode" 2 "StandBy mode" 3 "Active Control mode" 4 "Brake Only mode" 5 "Override" 6 "Stand Wait mode" 7 "Failure mode" ;
+VAL_ 338 AD_CDDActive 0 "not active" 1 "Active" ;
+VAL_ 338 AD_AEBActive 0 "not Active" 1 "Active." ;
+VAL_ 338 AD_FCWPreWarning 0 "no warning" 1 "warning" ;
+VAL_ 513 AD_Left_FCTALAlert 0 "No FCTA warning" 1 "FCTA warning Level1" 2 "FCTA warning Level2" 3 "FCTA warning Level3" ;
+VAL_ 513 AD_Right_FCTARAlert 0 "No FCTA warning" 1 "FCTA warning Level1" 2 "FCTA warning Level2" 3 "FCTA warning Level3" ;
+VAL_ 941 AD_IACCMode 0 "off" 1 "standby" 2 "passive" 3 "active" 4 "suspend" 5 "prohibition" 6 "reserved" 7 "failure" ;
+VAL_ 941 AD_AutoDriveState 0 "OFF" 1 "ACC" 2 "IACC" 3 "HWA" 4 "TJP" 5 "reserved" ;
+VAL_ 941 DMS_DrowsinessStatus 0 "Awake" 1 "Slightly Drowsy" 2 "Drowsy" 3 "Microsleep" 4 "Reserved" 5 "Unavailable" 6 "Unknown" 7 "Invalid" ;
+VAL_ 941 DMS_DriverEyesGazeArea 0 "driver forward" 1 "left outside mirror" 2 "right outside mirror" 3 "inside mirror" 4 "front passenger forward" 5 "HU area " 6 "IP area" 7 "gear area" 8 "below IP" 9 "driver door" 10 "front passenger" 11 "driver door window" 12 "up forward" 13 "front passenger door window" 14 "other" 15 "invalid" ;
+VAL_ 941 DMS_DistractionStatus 0 "Not Distracted" 1 "Distracted" 2 "Unknown" 3 "Invalid" ;
+VAL_ 941 AD_SafeStopSts 0 "not active" 1 "Stopping" 2 "Warning" 3 "not available" ;
+VAL_ 941 AD_TakeoverReqAtIPFail 0 "no request" 1 "level 1 request" 2 "level 2 request" 3 "reserved" ;
+VAL_ 941 AD_EyesOnWarnning 0 "no warnning" 1 "L1 warnning" 2 "L2 warnning" 3 "L3 warnning" 4 "Reserved" ;
+VAL_ 941 AD_LatTakeoverReq 0 "no request" 1 "level 1 request" 2 "level 2 request" 3 "reserved" ;
+VAL_ 941 AD_HandsOnReq 0 "no request" 1 "level 1 request" 2 "level 2 request" 3 "level 3 request" 4 "level 4 request" 5 "reserved" ;
+VAL_ 941 AD_LngTakeOverReq 0 "no request" 1 "level 1 request" 2 "level 2 request" 3 "reserved" ;
+VAL_ 941 AD_DriverHandsOffStatus 0 "hands off" 1 "hands on Level1" 2 "hand on Level2" 3 "unkown" ;
+VAL_ 941 AD_TargetBasedLateralControl 0 "no lateral control" 1 "around Based" 2 "lane based" 3 "target based" ;
+VAL_ 919 VIUFL_OTAmode 0 " OTAinactive " 1 "OTAmode" 2 " Reserved" ;
+VAL_ 648 BcmTurnIndcrRi 0 "OFF" 1 "ON" 2 "Notused" 3 "Error" ;
+VAL_ 648 BcmTurnIndcrLe 0 "OFF" 1 "ON" 2 "Notused" 3 "Error" ;
+VAL_ 648 BcmEmgyLiSts 0 "OFF" 1 "ON" 2 "Notused" 3 "Error�����ϣ�" ;
+VAL_ 648 BCM_TurnLightSwitchSts 0 "Not Actived" 1 "Left Actived" 2 "Right Actived" 3 "Invalid" ;
+VAL_ 648 BcmPwrStsFb 0 "Off" 1 "Reserve" 2 "ON" 3 "Reserve" ;
+VAL_ 433 VcuAccrPedlPosnVld 0 "Valid" 1 "Invalid" ;
+VAL_ 433 VcuSimnEpbSwtStsVld 0 "Valid" 1 "Invalid" ;
+VAL_ 433 VcuSimnEpbSwtSts 0 "no request" 1 "apply" ;
+VAL_ 433 VcuVehGearPosnVld 0 "Valid" 1 "Invalid" ;
+VAL_ 433 VcuCalcnAccrPedlPosnVld 0 "Valid" 1 "Invalid" ;
+VAL_ 433 VcuGearPosn 0 "Invalid" 1 "P" 2 "R" 3 "N" 4 "D" 5 "reserved" ;
+VAL_ 349 ESP_YawRateValid 0 " Initializing" 1 " Valid" 2 " Invalid" 3 " Reserved" ;
+VAL_ 349 ESP_LatAccelValid 0 "Initializing" 1 "Valid" 2 "Invalid" 3 "Reserved" ;
+VAL_ 349 ESP_LongAccelValid 0 "Initializing" 1 "Valid" 2 "Invalid" 3 "Reserved" ;
+VAL_ 349 ESP_Calibrated 0 "Calibrated" 1 " Not Calibrated" ;
+VAL_ 759 TboxLocalTiVld 0 "Valid" 1 "Invalid" ;
+VAL_ 1297 TpmsSysFailrWarn 0 "Noanyerror" 1 "Systemerror" ;
+VAL_ 1297 TpmsRiReTirePWarn 0 "Nowarning" 1 "Highpressurewarning" 2 "Lowpressurewarning" 3 "Quikleakage" 4 "LostSensor" 5 "Sensorbatterylow" 6 "Sensorfailure" 7 "Unlearning" ;
+VAL_ 1297 TpmsRiFrntTirePWarn 0 "Nowarning" 1 "Highpressurewarning" 2 "Lowpressurewarning" 3 "Quikleakage" 4 "LostSensor" 5 "Sensorbatterylow" 6 "Sensorfailure" 7 "Unlearning" ;
+VAL_ 1297 TpmsLeReTirePWarn 0 "Nowarning" 1 "Highpressurewarning" 2 "Lowpressurewarning" 3 "Quikleakage" 4 "LostSensor" 5 "Sensorbatterylow" 6 "Sensorfailure" 7 "Unlearning" ;
+VAL_ 1297 TpmsLeFrntTirePWarn 0 "Nowarning" 1 "Highpressurewarning" 2 "Lowpressurewarning" 3 "Quikleakage" 4 "LostSensor" 5 "Sensorbatterylow" 6 "Sensorfailure" 7 "Unlearning" ;
+VAL_ 688 VcuLoSocPowerOffFlag 0 "��Ч" 1 "��Ч" ;
+VAL_ 688 VcuCCMode 0 "Off" 1 "Active" 2 "Standby" 3 "Error" ;
+

@@ -245,11 +245,10 @@ def receive_can_data(dev_ch2):
         if ret > 0:
             rcv_can_msgs = (ZCAN_Receive_Data * ret)()
             num = canDLL.ZCAN_Receive(dev_ch2, byref(rcv_can_msgs), ret, -1)
-            print(f"CAN1 Received CAN NUM: {num}.")
-            for i in range(num):
-                print(f"[{i}]:ts:{rcv_can_msgs[i].timestamp}, id:{rcv_can_msgs[i].frame.can_id}, len:{rcv_can_msgs[i].frame.can_dlc}, "
-                    f"eff:{rcv_can_msgs[i].frame.eff}, rtr:{rcv_can_msgs[i].frame.rtr}, "
-                    f"data:{' '.join(str(rcv_can_msgs[i].frame.data[j]) for j in range(rcv_can_msgs[i].frame.can_dlc))}")
+            # for i in range(num):
+            #     print(f"[{i}]:ts:{rcv_can_msgs[i].timestamp}, id:{rcv_can_msgs[i].frame.can_id}, len:{rcv_can_msgs[i].frame.can_dlc}, "
+            #         f"eff:{rcv_can_msgs[i].frame.eff}, rtr:{rcv_can_msgs[i].frame.rtr}, "
+            #         f"data:{' '.join(str(rcv_can_msgs[i].frame.data[j]) for j in range(rcv_can_msgs[i].frame.can_dlc))}")
         return rcv_can_msgs
 
 def close_device(dev_ch1, dev_ch2, device_handle):
@@ -354,7 +353,7 @@ class CANClient:
         try:
             rcv_can_msgs = receive_can_data(dev_ch2)
             i = 0
-            log.info("DATA TYPE: ID datatypes: %s   -- Data: %s", type(rcv_can_msgs[i].frame.can_id), type(rcv_can_msgs[i].frame.data[0]))
+            # log.info("DATA TYPE: ID datatypes: %s   -- Data: %s", type(rcv_can_msgs[i].frame.can_id), type(rcv_can_msgs[i].frame.data[0]))
             log.info("Receive CAN message from USB CAN: ID %s Data: %s", rcv_can_msgs[i].frame.can_id, rcv_can_msgs[i].frame.data[0])
         except can.CanError:
             rcv_can_msgs = None  
@@ -368,7 +367,7 @@ class CANClient:
         if rcv_can_msgs:
             canmsg_format = can.Message(timestamp=rcv_can_msgs[i].timestamp, arbitration_id=rcv_can_msgs[i].frame.can_id, data=rcv_can_msgs[i].frame.data)
             canmsg = CANMessage(canmsg_format)
-            log.info("Type ID: %s - Type Data: %s", type(canmsg.get_arbitration_id()), type(canmsg.get_data()))
+            # log.info("Type ID: %s - Type Data: %s", type(canmsg.get_arbitration_id()), type(canmsg.get_data()))
             log.info("Convert to CAN msg STRUCT: [ID] %s - [data] %s", canmsg.get_arbitration_id(), canmsg.get_data())
             return canmsg
         return None
