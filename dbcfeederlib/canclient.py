@@ -184,9 +184,12 @@ def start_channel(dev_ch):
 # New code of filter config only for CAN ID 0x31C
 def configure_filter(dev_ch2):
     canDLL.ZCAN_ClearFilter(dev_ch2)
-    canDLL.ZCAN_SetFilterMode(dev_ch2, 0)  # 0 = Range mode, 1 = List mode
+    canDLL.ZCAN_SetFilterMode(dev_ch2, 0)  # 0 for standard CAN
     canDLL.ZCAN_SetFilterStartID(dev_ch2, 0x31C)  
     canDLL.ZCAN_SetFilterEndID(dev_ch2, 0x31C)    
+    # second filter
+    canDLL.ZCAN_SetFilterStartID(dev_ch2, 0x58A)  
+    canDLL.ZCAN_SetFilterEndID(dev_ch2, 0x058A) 
     canDLL.ZCAN_AckFilter(dev_ch2)
 
 def send_canfd_data(dev_ch1):
